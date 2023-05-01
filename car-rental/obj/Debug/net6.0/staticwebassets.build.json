@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WnJBKahKl6eM2zYFZfQvdsAG8WmH+9rklGFzM3DNKJA=",
+  "Hash": "vs79RhLLSkcDo5FhvZqPDDBE3w7UFG7L4/RuK2tVZEY=",
   "Source": "car-rental",
   "BasePath": "_content/car-rental",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\5deec1bd-5efe-496a-8532-b85135ddedd9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental\\wwwroot\\Uploads\\a2312c6d-3fe8-462c-93f1-227c22cc183e.jpg",
+      "SourceId": "car-rental",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental\\wwwroot\\",
+      "BasePath": "_content/car-rental",
+      "RelativePath": "Uploads/a2312c6d-3fe8-462c-93f1-227c22cc183e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\a2312c6d-3fe8-462c-93f1-227c22cc183e.jpg"
     }
   ]
 }

@@ -5,6 +5,7 @@ using car_rental.infrastructure.Services;
 using CarRentalSystem.Application.Common.Services;
 using CarRentalSystem.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -50,6 +51,11 @@ namespace car_rental.infrastructure.DI
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IFileService, FileService>();
             services.AddTransient<IUserService, UserService>();
+
+            //services.Configure<FormOptions>(options =>
+            //{
+            //    options.MultipartBodyLengthLimit = 1572864;
+            //});
 
 
             //services.AddIdentityCore<IdentityUser>(options =>

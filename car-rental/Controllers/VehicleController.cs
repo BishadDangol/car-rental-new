@@ -54,8 +54,14 @@ namespace car_rental.Controllers
 
             Vehicle vehicle = new Vehicle();
 
+
+            //services.Configure<FormOptions>(options =>
+            //{
+            //    options.MultipartBodyLengthLimit = 1572864;
+            //});
+
             //if (model.PhotoUrl != null)
-            if (model.PhotoUrl != null && model.PhotoUrl.Length > 0)
+            if (model.PhotoUrl != null && model.PhotoUrl.Length > 1572864)
             {
                 var result = _fileService.SaveImage(model.PhotoUrl);
                 if (result.Item1 == 1)
