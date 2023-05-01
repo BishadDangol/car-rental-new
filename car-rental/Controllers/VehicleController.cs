@@ -24,6 +24,14 @@ namespace car_rental.Controllers
         }
 
         [HttpGet]
+        public IActionResult AdminDisplayVehicle()
+        {
+            //List<Vehicle> vehicleList = _unitOfWork.Vehicle.GetAllAsync().toList;
+            List<Vehicle> vehicleList = _unitOfWork.Vehicle.GetAll();
+            return View(vehicleList);
+        }
+
+        [HttpGet]
         public IActionResult DisplayVehicle()
         {
             //List<Vehicle> vehicleList = _unitOfWork.Vehicle.GetAllAsync().toList;

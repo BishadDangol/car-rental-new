@@ -1,0 +1,39 @@
+﻿@using car_rental.application.DTOs;
+@using car_rental.domain.Entities;
+@model IEnumerable<Vehicle>
+
+@{
+    <div class="membertable">
+
+        <div class="chart-table">
+            <table class="table  mb-0 bg-white">
+                <thead class="bg-light-1-member">
+                    <p class="chart-title">Vehicle list</p>
+                    <tr class="light">
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Colour</th>
+                        <th>Rate</th>
+                        <th>Image</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var obj in Model.Take(20))
+                    {
+                        <tr>
+                            <td>@obj.Name</td>
+                            <td>@obj.Brand</td>
+                            <td>@obj.Color</td>
+                            <td>@obj.Rate</td>
+                            <td>@obj.PhotoUrl</td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
