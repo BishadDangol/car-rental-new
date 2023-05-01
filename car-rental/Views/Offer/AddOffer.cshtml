@@ -1,0 +1,34 @@
+﻿@using car_rental.domain.Entities;
+@model Offer
+
+
+
+<section id="products" class="my-5 pb-5">
+    <h2>Offer Add Form</h2>
+    
+    <div class="row mt-2">
+        <div class="col-md-6 order-md-1">
+            <form method="POST" asp-controller="Offer" asp-action="AddOffer" enctype="multipart/form-data">
+
+                <div class="mb-3">
+                    <label asp-for="@Model.OfferName" class="form-label"></label>
+                    <input asp-for="@Model.OfferName" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter name of car">
+                </div>
+                @*<div class="mb-3">
+                    <label asp-for="@Model.Amount" class="form-label"></label>
+                    <input asp-for="@Model.Amount" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Type description here...">
+                </div>*@
+                <div class="mb-3">
+                    <label asp-for="@Model.OfferDesc" class="form-label"></label>
+                    <input asp-for="@Model.OfferDesc" type="textarea" class="form-control" id="exampleFormControlInput1" placeholder="Type Car Color here..." />
+                </div>
+                
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+

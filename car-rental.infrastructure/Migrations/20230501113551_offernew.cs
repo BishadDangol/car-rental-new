@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace car_rental.infrastructure.Migrations
 {
-    public partial class initial : Migration
+    public partial class offernew : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -49,6 +49,21 @@ namespace car_rental.infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Offer",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    OfferName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Amount = table.Column<int>(type: "int", nullable: false),
+                    OfferDesc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Percentage = table.Column<float>(type: "real", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Offer", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -323,6 +338,9 @@ namespace car_rental.infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Document");
+
+            migrationBuilder.DropTable(
+                name: "Offer");
 
             migrationBuilder.DropTable(
                 name: "Request");

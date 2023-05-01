@@ -3246,23 +3246,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL5593\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental\\car-rental.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental\\car-rental.csproj",
       "projectName": "car-rental",
-      "projectPath": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental\\car-rental.csproj",
-      "packagesPath": "C:\\Users\\DELL5593\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental\\car-rental.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\DELL5593\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3278,11 +3278,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental.application\\car-rental.application.csproj": {
-              "projectPath": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental.application\\car-rental.application.csproj"
+            "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental.application\\car-rental.application.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental.application\\car-rental.application.csproj"
             },
-            "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental.infrastructure\\car-rental.infrastructure.csproj": {
-              "projectPath": "C:\\Users\\DELL5593\\Desktop\\car-rental\\car-rental.infrastructure\\car-rental.infrastructure.csproj"
+            "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental.infrastructure\\car-rental.infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\OneDrive\\Desktop\\sanjitad\\CarRental\\car-rental.infrastructure\\car-rental.infrastructure.csproj"
             }
           }
         }
@@ -3331,7 +3331,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,8 +3,6 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #b9c3dd;
-    color: #666666;
     font-family: "Poppins";
 }
 
@@ -117,6 +115,8 @@
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    -webkit-box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
 
     #sidebar .sidebar-title {

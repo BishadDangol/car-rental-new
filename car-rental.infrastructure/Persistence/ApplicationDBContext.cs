@@ -25,6 +25,8 @@ namespace car_rental.infrastructure.Persistence
         public DbSet<Staff> Staff { get; set; }
         public DbSet<Document> Document { get; set; }
 
+        public DbSet<Offer> Offer { get; set; }
+
         //public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         //{
         //    foreach (Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry<BaseEntity> entry in ChangeTracker.Entries<BaseEntity>())

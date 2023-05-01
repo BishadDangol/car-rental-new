@@ -63,6 +63,31 @@ namespace car_rental.infrastructure.Migrations
                     b.ToTable("Document");
                 });
 
+            modelBuilder.Entity("car_rental.domain.Entities.Offer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("OfferDesc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OfferName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Percentage")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Offer");
+                });
+
             modelBuilder.Entity("car_rental.domain.Entities.Request", b =>
                 {
                     b.Property<Guid>("Id")

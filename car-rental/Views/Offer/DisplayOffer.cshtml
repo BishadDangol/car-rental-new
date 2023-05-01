@@ -1,0 +1,27 @@
+﻿@using car_rental.application.DTOs;
+@using car_rental.domain.Entities;
+@model IEnumerable<Offer>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="products" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+        <h2>Most Popular Cars</h2>
+    </div>
+    <div class="row mx-auto container-fluid">
+
+        @foreach (var obj in Model.Take(20))
+        {
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/products/photo-1605559424843-9e4c228bf1c2.jpeg" alt="">
+                <div class="desc">
+                    <span>@obj.OfferName</span>
+                    <h5> @obj.OfferDesc</h5>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+

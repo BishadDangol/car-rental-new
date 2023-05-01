@@ -13,6 +13,8 @@ namespace car_rental.application.Common.Interface
         ICustomer Customer { get; set; }
         IStaff Staff { get; set; }
         IDocument Document { get; set; }
+        IOffer Offer { get; set; }
+
         Task<int> SaveChangesAsync();
     }
 }

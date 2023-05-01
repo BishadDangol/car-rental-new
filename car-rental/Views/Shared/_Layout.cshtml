@@ -31,6 +31,9 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="displayvehicle">Cars</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="displayoffer">Offer</a>
+                            </li>
                             <partial name="_PartialLogin" />
                         </ul>
                     </div>
@@ -142,20 +145,29 @@ else if (User.IsInRole("Admin") || User.IsInRole("Staff"))
                     <li class="sidebar-list-item">
                         <span class="material-icons-outlined">dashboard</span> Dashboard
                     </li>
-                    
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="AddVehicle">
                     <li class="sidebar-list-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="AddVehicle">
+                        
                         <span class="material-icons-outlined">
                             leaderboard
                         </span> Add Vehicle
-                        </a>
+                        
                     </li>
+                    </a>
                     
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="DisplayVehicle">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="AdminDisplayVehicle">
                     <li class="sidebar-list-item">
                         <span class="material-icons-outlined">
                             badge
                         </span> List Vehicle
+                    </li>
+                    </a>
+
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="AddOffer">
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">
+                            badge
+                        </span> Add Offer
                     </li>
                     </a>
 

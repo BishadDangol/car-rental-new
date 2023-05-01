@@ -46,3 +46,15 @@ C:\Users\Administrator\OneDrive\Desktop\ady3\car-rental\car-rental.domain\obj\De
 C:\Users\Administrator\OneDrive\Desktop\ady3\car-rental\car-rental.domain\obj\Debug\net6.0\refint\car-rental.domain.dll
 C:\Users\Administrator\OneDrive\Desktop\ady3\car-rental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.pdb
 C:\Users\Administrator\OneDrive\Desktop\ady3\car-rental\car-rental.domain\obj\Debug\net6.0\ref\car-rental.domain.dll
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\bin\Debug\net6.0\car-rental.domain.deps.json
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\bin\Debug\net6.0\car-rental.domain.dll
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\bin\Debug\net6.0\car-rental.domain.pdb
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.csproj.AssemblyReference.cache
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.AssemblyInfo.cs
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.dll
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\refint\car-rental.domain.dll
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\car-rental.domain.pdb
+C:\Users\Administrator\OneDrive\Desktop\sanjitad\CarRental\car-rental.domain\obj\Debug\net6.0\ref\car-rental.domain.dll
