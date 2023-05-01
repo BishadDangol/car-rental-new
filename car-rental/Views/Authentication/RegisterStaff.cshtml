@@ -1,0 +1,34 @@
+﻿@using car_rental.application.DTOs;
+@model StaffRegisterDTO
+
+<section id="products" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+        <h2>Staff Register Form</h2>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-6 order-md-1">
+
+            <form method="POST" asp-controller="Authentication" asp-action="RegisterStaff">
+                <div class="mb-3">
+                    <label asp-for="@Model.FirstName" class="form-label"></label>
+                    <input asp-for="@Model.FirstName" type="text" class="form-control w-50" id="firstname" placeholder="Enter your first name">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.LastName" class="form-label"></label>
+                    <input asp-for="@Model.LastName" type="text" class="form-control w-50" id="lastname" placeholder="Enter your last name">
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="@Model.Email" class="form-label"></label>
+                    <input asp-for="@Model.Email" type="email" class="form-control w-50" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Password" class="form-label"></label>
+                    <input asp-for="@Model.Password" type="password" class="form-control w-50" id="password" placeholder="password">
+                </div>
+                <button type="submit" class="btn btn-primary" name="register">Register</button>
+            </form>
+
+        </div>
+    </div>
+</section>

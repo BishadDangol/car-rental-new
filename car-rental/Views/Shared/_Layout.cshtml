@@ -1,0 +1,287 @@
+﻿@if (User.IsInRole("Customer"))
+{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - car_rental</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <script src="https://kit.fontawesome.com/a13829d471.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    </head>
+
+
+    <body>
+        <header class="header mb-5">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" class="logo" asp-area="" asp-controller="Home" asp-action="Landing"><img id="logo" src="~/img/carlogo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="displayvehicle">Cars</a>
+                            </li>
+                            <partial name="_PartialLogin" />
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3> Car Rental </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                    <a href="#" class="links"> <i class="fas fa-envelope"></i> abc@gmail.com </a>
+                    <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> ktm, nepal - 400104 </a>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+        </section>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+    </html>
+
+
+}
+
+
+else if (User.IsInRole("Admin") || User.IsInRole("Staff"))
+{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - car_rental</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <script src="https://kit.fontawesome.com/a13829d471.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+    </head>
+    <body>
+        <div class="grid-container">
+
+            <!-- Header -->
+            <header class="header">
+                <div class="menu-icon">
+                    <span class="material-icons-outlined">menu</span>
+                </div>
+                <div class="header-left">
+                    <span class="material-icons-outlined">search</span>
+                </div>
+                <div class="header-right">
+                    <span class="material-icons-outlined">notifications</span>
+                </div>
+            </header>
+            <!-- End Header -->
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="brand-name">
+                        <p>Car rental</p>
+                    </div>
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+                </div>
+
+                <ul class="sidebar-list">
+
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    </li>
+                    
+                    <li class="sidebar-list-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="AddVehicle">
+                        <span class="material-icons-outlined">
+                            leaderboard
+                        </span> Add Vehicle
+                        </a>
+                    </li>
+                    
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="DisplayVehicle">
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">
+                            badge
+                        </span> List Vehicle
+                    </li>
+                    </a>
+
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">
+                            calendar_month
+                        </span> Lmcwcneicn
+                    </li>
+                </ul>
+            </aside>
+            <!-- End Sidebar -->
+            <!-- Main -->
+            <div class="container">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+            <!-- End Main -->
+
+        </div>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+
+    </html>
+
+
+}
+
+
+else
+{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - car_rental</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <script src="https://kit.fontawesome.com/a13829d471.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    </head>
+
+
+    <body>
+        <header class="header mb-5">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" class="logo" asp-area="" asp-controller="Home" asp-action="Landing"><img id="logo" src="~/img/carlogo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Vehicle" asp-action="displayvehicle">Cars</a>
+                            </li>
+                            <partial name="_PartialLogin" />
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3> Car Rental </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                    <a href="#" class="links"> <i class="fas fa-envelope"></i> abc@gmail.com </a>
+                    <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> ktm, nepal - 400104 </a>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+        </section>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+    </html>
+
+
+}
+

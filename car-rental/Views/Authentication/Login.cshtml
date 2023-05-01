@@ -1,0 +1,25 @@
+﻿@using car_rental.application.DTOs
+@model UserLoginRequestDTO
+
+<section id="products" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+        <h2>Login Form</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6 order-md-1">
+
+            <form method="post"  asp-controller="Authentication" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" role="form">
+                <div class="form-group">
+                    <span class="fa fa-envelope"></span>
+                    <input type="email" name="email" class="form-control w-50 h-50" id="firstname" id="email" placeholder="Email" asp-for="@Model.Email">
+                </div>
+                <div class="form-group">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" name="password" class="form-control w-50" id="firstname" id="password" placeholder="Password" @Model.Password>
+                </div>
+                <button type="submit" class="btn btn-primary" name="login">Log in<span class="fa fa-arrow-circle-right px-half"></span></button>
+            </form>
+
+        </div>  
+    </div>
+</section>
