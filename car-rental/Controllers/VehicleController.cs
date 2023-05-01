@@ -61,7 +61,7 @@ namespace car_rental.Controllers
             //});
 
             //if (model.PhotoUrl != null)
-            if (model.PhotoUrl != null && model.PhotoUrl.Length > 1572864)
+            if (model.PhotoUrl != null && model.PhotoUrl.Length > 0)
             {
                 var result = _fileService.SaveImage(model.PhotoUrl);
                 if (result.Item1 == 1)

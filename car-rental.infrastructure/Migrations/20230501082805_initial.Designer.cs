@@ -12,8 +12,8 @@ using car_rental.infrastructure.Persistence;
 namespace car_rental.infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230430202544_first")]
-    partial class first
+    [Migration("20230501082805_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
